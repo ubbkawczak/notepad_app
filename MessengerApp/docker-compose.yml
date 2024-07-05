@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: messenger_db
+      POSTGRES_USER: messenger_user
+      POSTGRES_PASSWORD: StrongPassword123!
+    ports:
+      - "5432:5432"
